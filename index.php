@@ -2,8 +2,8 @@
 
 	$key = $_REQUEST['code'];
 	if(isset($key)){
-		$client_id ="ZWFXMP12CRJWVBE3EQYTP233IJGG53JPC0NQ3VXFL55OO2NZ";
-		$client_secret = "XPIIZRVPBGPOMS033GXMCJETV2AFVGALGGA2LFT1MUO2YIS3";
+		$client_id ="";
+		$client_secret = "";
 		$redirect_uri = "http://dump.visionsandviews.net/osm/"; //In this example the redirect_uri is just pointing back to this file
 	
 		$uri = file_get_contents("https://foursquare.com/oauth2/access_token?client_id=".$client_id."&client_secret=".$client_secret."&grant_type=authorization_code&redirect_uri=".$redirect_uri."&code=".$key, 
